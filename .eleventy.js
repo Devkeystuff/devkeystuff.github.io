@@ -11,10 +11,10 @@ module.exports = function (eleventyConfig) {
   }
 
   // Passthrough
-  eleventyConfig.addPassthroughCopy({ "src/static": "." });
+  eleventyConfig.addPassthroughCopy({ "src/_11ty/_static/*.*": "." });
 
   // Watch targets
-  eleventyConfig.addWatchTarget("./src/styles/");
+  eleventyConfig.addWatchTarget("./src/_11ty/_tailwind/");
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
