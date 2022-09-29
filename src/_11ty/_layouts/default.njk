@@ -37,7 +37,11 @@
     <link rel="stylesheet" href="{{ '/tailwind.css' | url }}" />
   </head>
 
-  <body class="font-sans leading-normal tracking-normal prose prose-lg text-gray-900">
-    {{ content | safe }}
+  <body class="max-w-2xl px-6 mx-auto prose prose-lg text-gray-900">
+    {% include 'page-header.njk' %}
+    <main class="pb-28">
+      {{ content | safe }}
+    </main>
+    {% include 'page-footer.njk' %}
   </body>
 </html>
