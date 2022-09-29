@@ -22,11 +22,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  var pathPrefix = "";
-  if (process.env.GITHUB_REPOSITORY) {
-    pathPrefix = process.env.GITHUB_REPOSITORY.split("/")[1];
-  }
-
   return {
     passthroughFileCopy: true,
     dir: {
@@ -36,7 +31,6 @@ module.exports = function (eleventyConfig) {
       data: "/_11ty/_data/",
       output: "./_site/",
     },
-    pathPrefix,
   };
 };
 
