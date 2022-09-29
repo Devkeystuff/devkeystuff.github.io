@@ -10,6 +10,10 @@ module.exports = function (eleventyConfig) {
     });
   }
 
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: true,
+  });
+
   // Passthrough
   eleventyConfig.addPassthroughCopy({ "src/_11ty/_static/*.*": "." });
 
