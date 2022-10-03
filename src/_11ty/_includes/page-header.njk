@@ -1,3 +1,11 @@
-<header class="flex items-center gap-2 h-28">
-  <h4 class="m-0">Devkey</h4>
+<header class="flex items-center justify-between gap-2 h-28">
+  <h4 class="m-0 font-normal">Devkey's blog</h4>
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul class="flex gap-4 m-0 list-none">
+    {%- for entry in navPages %}
+      <li {% if entry.url == page.url %} class="active" {% endif %}>
+        <a href="{{ entry.url | url }}">{{entry.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </header>

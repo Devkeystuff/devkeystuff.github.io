@@ -1,0 +1,9 @@
+---
+layout: default
+description: Post page
+---
+<article>
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <p class="mt-10 prose prose-gray">Published on: {{ date.toDateString() }}</p>
+</article

@@ -4,12 +4,12 @@
     <!-- https://github.com/joshbuchea/HEAD -->
 
     <!-- Recommended -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Meta -->
-    <meta name="description" content="{{ metadata.description }}" />
-    <meta name="generator" content="{{ eleventy.generator }}" />
+    <meta name="description" content="{{ metadata.description }}"/>
+    <meta name="generator" content="{{ eleventy.generator }}"/>
 
     <!-- Icons -->
     <!-- https://favicon.io/ -->
@@ -17,27 +17,27 @@
       rel="apple-touch-icon"
       sizes="180x180"
       href="{{ '/apple-touch-icon.png' | url }}"
-    />
+/>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="{{ '/favicon-32x32.png' | url }}"
-    />
+/>
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="{{ '/favicon-16x16.png' | url }}"
-    />
-    <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
+/>
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}"/>
 
     <title>{{ title or metadata.title }}</title>
 
-    <link rel="stylesheet" href="{{ '/tailwind.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/tailwind.css' | url }}"/>
   </head>
 
-  <body class="max-w-2xl px-6 mx-auto prose prose-lg text-gray-900">
+  <body class="relative max-w-2xl min-h-screen px-6 mx-auto prose prose-lg text-gray-900">
     {% include 'page-header.njk' %}
     <main class="pb-28">
       {{ content | safe }}

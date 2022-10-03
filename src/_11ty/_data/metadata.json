@@ -1,4 +1,11 @@
 {
-  "title": "windty 🌬️",
-  "description": "Windty is a basic template using 11ty and Tailwind, and deploys to github pages."
+  "title": "Devkey's blog",
+  "description": "The official Devkey's blog site where you'll find a lot of crap about coding, design and music",
+  "language": "en-us",
+  "authorName": "Devkey",
+  "robots": "index, follow",
+  "email": "devkeystuff@protonmail.com",
+  "twitterUser": "https://twitter.com/devkey",
+  "githubUser": "devkeystuff",
+  "linkedinkUser": "https://www.linkedin.com/in/ronalds-palacis-1192bb212"
 }

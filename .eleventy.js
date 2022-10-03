@@ -1,5 +1,6 @@
 const fs = require("fs");
 const htmlmin = require("html-minifier");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
   if (process.env.ELEVENTY_PRODUCTION) {
@@ -9,6 +10,8 @@ module.exports = function (eleventyConfig) {
       callbacks: { ready: browserSyncReady },
     });
   }
+
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
